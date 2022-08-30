@@ -8,6 +8,27 @@
     <title>Colour Picker - coded by Ishbel Fahey-Thealer</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <form id="form">
+          <input type="color" id="colorValue" />
+          <select name="colors" id="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+          <button type="submit">Get Color Scheme</button>
+        </form>
+      </header>
+      <main>
+        <div id="colorSchemeResult"></div>
+      </main>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

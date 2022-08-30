@@ -1,0 +1,23 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* nav */
+form {
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* layout */
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: min(90%, 900px);
+  margin: 5em auto;
+}
