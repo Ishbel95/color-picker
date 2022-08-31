@@ -16,9 +16,6 @@ function renderColorScheme(data) {
             `;
     result.innerHTML += html;
   }
-
-  console.log(colorArr);
-  console.log(data);
 }
 
 function getColorScheme(colorData) {
