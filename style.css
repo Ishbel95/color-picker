@@ -2,17 +2,52 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
   margin: 0;
 }
-
+img {
+  max-width: 100%;
+}
 /* nav */
 form {
-  margin-top: 10em;
   display: flex;
   justify-content: space-evenly;
+  background: white;
+  padding: 2em 0 1em;
+  font-weight: 300;
 }
+input[type="color" i],
+select,
+button {
+  cursor: pointer;
+  border: solid 1px rgb(104, 104, 104);
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out;
+}
+input[type="color" i]:hover,
+input[type="color" i]:focus,
+select:hover,
+select:focus,
+button:hover,
+button:focus {
+  box-shadow: 2px 2px 2px rgb(104, 104, 104);
+}
+input[type="color" i] {
+  padding: 0;
+  width: 4em;
+  height: 4em;
+}
+select {
+  padding: 1em;
+  width: 50%;
+}
+button {
+  width: 20%;
+}
+
 /* layout */
 
 .container {
@@ -21,8 +56,21 @@ form {
   justify-content: center;
   width: min(90%, 900px);
   margin: 5em auto;
+  background-color: rgb(247, 247, 247);
+  padding: 1em;
 }
 
 #colorSchemeResult {
   display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #fff;
+}
+
+#colorSchemeResult img {
+  height: 50vh;
+}
+
+#colorSchemeResult p {
+  text-align: center;
 }

@@ -10,7 +10,7 @@ function renderColorScheme(data) {
   for (let hex of colorArr) {
     html = `
             <div class="color-scheme-content">
-             <img src="${hex.image.named}"/>
+             <img src="${hex.image.bare}"/>
             <p>${hex.hex.value}</p>
             <div>
             `;
