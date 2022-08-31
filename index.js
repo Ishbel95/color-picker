@@ -33,7 +33,7 @@ function getColorScheme(colorData) {
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
-
+  result.innerHTML = "";
   const data = {
     colorValue: color.value.substring(1),
     modeValue: mode.value,
